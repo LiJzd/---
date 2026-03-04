@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "刷题批注助手",
+  "version": "1.0.0",
+  "description": "在力扣等刷题网站上选中文字并添加批注",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://leetcode.cn/*",
+        "*://leetcode.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  }
+}

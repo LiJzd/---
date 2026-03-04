@@ -1,0 +1,141 @@
+/* 批注按钮 */
+.annotation-button {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.annotation-button:hover {
+  background: #1557b0;
+}
+
+/* 批注对话框 */
+.annotation-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.annotation-dialog-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.annotation-dialog-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.annotation-dialog-content p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.annotation-dialog-content textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.annotation-dialog-buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.annotation-dialog-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#save-annotation {
+  background: #1a73e8;
+  color: white;
+}
+
+#save-annotation:hover {
+  background: #1557b0;
+}
+
+#cancel-annotation {
+  background: #f1f3f4;
+  color: #333;
+}
+
+#cancel-annotation:hover {
+  background: #e8eaed;
+}
+
+/* 高亮的批注文字 */
+.annotated-text {
+  background-color: #fff59d;
+  cursor: pointer;
+  border-bottom: 2px solid #fbc02d;
+  padding: 2px 0;
+}
+
+.annotated-text:hover {
+  background-color: #fff176;
+}
+
+/* 批注弹窗 */
+.annotation-popup {
+  position: fixed;
+  z-index: 10001;
+}
+
+.annotation-popup-content {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 300px;
+  border: 1px solid #e0e0e0;
+}
+
+.annotation-popup-content p {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.delete-annotation {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-annotation:hover {
+  background: #c82333;
+}
